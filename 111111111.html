@@ -1,0 +1,85 @@
+<html>
+<head>
+<title>Sri Ladies Tailoring</title>
+<style>
+	
+	header{
+		grid-area:header;
+		background-color:purple;
+		color:white;
+		text-align:center;
+	}
+	footer{
+		grid-area:footer;
+		background-color:orange;
+		text-align:center;
+	}
+	nav{
+		grid-area:nav;
+		background-color:red;
+		text-align:center;
+	}
+	aside{
+		grid-area:aside;
+		background-color:green;
+		text-align:center;
+	}
+	nav ul{
+		list-style:none;
+		padding:0;
+		margin:0;
+	}
+	nav ul li{
+		margin:10px 30px;
+		display:inline-block;
+	}
+	.wth{
+		display:grid;
+		grid-template-areas:
+		"header header"
+		"nav nav"
+		"aside main"
+		"footer footer";
+		grid-template-rows: 90px 40px 1fr 50px;
+		grid-template-columns: 200px 1fr;
+		height: 100vh;	
+	}
+	main{
+		grid-area:main;
+		background-color:pink;
+		text-align:center;
+	}
+</style>	
+</head>
+<body>
+<div class="wth">
+<header>
+<h2>Sri Ladies Tailoring</h2>
+<h6>Kovaipudhur Coimbatore</h6>
+</header>
+<nav>
+	<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">About</a></li>
+		<li><a href="#">contact</a></li>
+		<li><a href="#">service</a></li>
+	</ul>
+</nav>
+<aside>
+	<h3>SideChick</h3>
+<ul>
+	<li>links</li>
+	<li>advertisement</li>
+	<li>updates</li>
+</ul>
+</aside>
+<main>
+	<h4>Key Topics</h4><p class="wdym">What do you mean?</p>
+	<h4>Bgcolor</h4><p class="idgaf">I don't give a frd</p>
+</main>
+<footer>
+<p>&copy Thankyou</p>
+</footer>
+</div>
+</body>
+</html>
